@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .column {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .columnLeft {
+    padding-right: 8px;
+  }
+  
+  .columnRight {
+    padding-left: 8px;
+  }
+  
+  .image {
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+  
+  .text {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }

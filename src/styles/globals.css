@@ -1,0 +1,38 @@
+
+.tailwind-scope {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+}
+
+.ant-card .ant-card-meta-title{
+  font-size: 16px !important;
+}
+
+.ant-card .ant-card-meta-description{
+  font-size: 15px !important;
+  
+}
+
+.ant-list-item-action{
+  display: flex;
+  flex-direction: row;
+  padding-left: 5% !important;
+}
+
+.ant-card{
+  background-color: #f5f5f5 !important;
+}
+
+.ant-layout{
+  background-color: white;
+}
+
+.ant-layout-content{
+  background-color: white;
+}
+
+
+.ant-popover-content{
+  max-width: 350px !important;
+}

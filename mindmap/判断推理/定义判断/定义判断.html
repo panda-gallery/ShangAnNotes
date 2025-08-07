@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"定义判断","children":[{"content":"解题步骤","children":[{"content":"\n<p data-lines=\"4,5\"><strong>看清提问方式</strong></p>","children":[{"content":"是“属于/符合”定义，还是“不属于/不符合”定义。","children":[],"payload":{"lines":"5,7"}}],"payload":{"lines":"4,7"}},{"content":"\n<p data-lines=\"7,8\"><strong>识别有效信息</strong></p>","children":[{"content":"找准关键词。","children":[],"payload":{"lines":"8,10"}}],"payload":{"lines":"7,10"}},{"content":"\n<p data-lines=\"10,11\"><strong>逐一分析选项</strong></p>","children":[{"content":"当划定时采用对比的思维进行排除，最终选择更符合题干要求的选项。","children":[],"payload":{"lines":"11,13"}}],"payload":{"lines":"10,13"}}],"payload":{"lines":"2,3"}},{"content":"读得准","children":[{"content":"\n<p data-lines=\"17,18\"><strong>定义词汇中通俗易懂的词</strong></p>","children":[{"content":"<strong>主体、客体</strong><br>\n注意数量词。","children":[],"payload":{"lines":"18,20"}},{"content":"<strong>时间、地点</strong><br>\n等具体提到。","children":[],"payload":{"lines":"20,22"}},{"content":"<strong>方式、目的</strong>","children":[],"payload":{"lines":"22,23"}},{"content":"<strong>原因、结果</strong>","children":[],"payload":{"lines":"23,24"}},{"content":"明确具体的修饰词。","children":[],"payload":{"lines":"24,25"}},{"content":"反复提到的词。","children":[],"payload":{"lines":"25,27"}}],"payload":{"lines":"17,27"}},{"content":"\n<p data-lines=\"27,28\"><strong>句式</strong></p>","children":[{"content":"定义内容。","children":[],"payload":{"lines":"28,30"}}],"payload":{"lines":"27,30"}}],"payload":{"lines":"15,16"}},{"content":"读得快","children":[{"content":"\n<p data-lines=\"34,35\"><strong>优先看定义所在的句子</strong></p>","children":[{"content":"有解释说明，重点阅读（即、包括、也就是说、以下情形……）。","children":[],"payload":{"lines":"35,37"}}],"payload":{"lines":"34,37"}},{"content":"\n<p data-lines=\"37,38\"><strong>哪里能看懂，就优先看哪里</strong></p>","children":[],"payload":{"lines":"37,39"}}],"payload":{"lines":"32,33"}},{"content":"对比择优","children":[{"content":"\n<p data-lines=\"43,45\"><strong>多定义词</strong><br>\n看哪个定义词看哪个定义。</p>","children":[],"payload":{"lines":"43,46"}},{"content":"\n<p data-lines=\"46,47\"><strong>违背定义关键词的选项最差</strong></p>","children":[],"payload":{"lines":"46,48"}},{"content":"\n<p data-lines=\"48,49\"><strong>更明确符合定义关键词的选项更优</strong></p>","children":[],"payload":{"lines":"48,50"}},{"content":"\n<p data-lines=\"50,51\"><strong>选项表述或结构相似，可同时排除（同构选项）</strong></p>","children":[],"payload":{"lines":"50,51"}}],"payload":{"lines":"41,42"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
